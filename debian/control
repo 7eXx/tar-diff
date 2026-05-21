@@ -1,0 +1,13 @@
+Source: tar-diff
+Maintainer: Alexander Larsson <alexander.larsson@gmail.com>
+Section: misc
+Priority: optional
+Standards-Version: 0.4.0
+Build-Depends: debhelper (>= 11), build-essential, libssh-dev, zlib1g-dev
+
+Package: tardiff
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, tar
+Description: A tool to create binary differences between files.
+ It takes to files and generate a diff file.
+ It allows from first file and diff file to generate second one.
