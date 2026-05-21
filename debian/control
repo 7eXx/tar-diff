@@ -5,7 +5,7 @@ Priority: optional
 Standards-Version: 0.4.0
 Build-Depends: debhelper (>= 11), build-essential, libssh-dev, zlib1g-dev
 
-Package: tardiff
+Package: tar-diff
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, tar
 Description: A tool to create binary differences between files.
