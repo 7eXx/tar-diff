@@ -88,7 +88,7 @@ validate: lint
 	@go vet $(GOFLAGS) ./...
 	@if [ -n "$$WINDIR" ]; then echo "Skipping gofmt check on Windows"; else output=$$(gofmt -s -l .); test -z "$$output" || (echo "$$output"; exit 1); fi
 
-lint:
+lint: tools
 	GOFLAGS=$(GOFLAGS) $(GOBIN)/golangci-lint run
 
 dist: $(PROJ_TARBALL)
